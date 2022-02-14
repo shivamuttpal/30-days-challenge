@@ -1,0 +1,75 @@
+:root{
+    --base:#00ffff;
+    --spacing:10px;
+    --blur:0px;
+}
+
+img{
+    padding:var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    height: 40vh;
+    width: 30%;
+}
+
+.h1{
+    color: var(--base);
+    /* font-size: 20px; */
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.3rem;
+    font-size: 3rem;
+}
+
+body{
+    background:#193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+
+}
+.controls{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.basecolor{
+    display: flex;
+    justify-content: center;
+}
+label{
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+input{
+    width: 100px;
+}
+
+button{
+    width: 5rem;
+    height:2rem;
+    background-color:antiquewhite;
+    border: 2px solid aquamarine ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+#text{
+    font-size: 2rem;
+    margin-top: -3px;
+}
