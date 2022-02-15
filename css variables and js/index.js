@@ -20,7 +20,7 @@ document.addEventListener("keypress", (event) => {
   if (number == 7) number = 1;
   var key = event.key;
   var randomNumbertext = "doreamon" + number + ".jpg";
-  ++randomNumber;
+  ++number;
   if (key == "d") {
     image1.setAttribute("src", randomNumbertext);
   }
