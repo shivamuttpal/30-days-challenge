@@ -1,5 +1,5 @@
 const inputs = document.querySelectorAll('.controls input');
-var image1=document.querySelectorAll("img")[0];
+var image1 = document.querySelectorAll("img")[0];
 
 
 inputs.forEach(input => input.addEventListener('change', handleUpdate));
@@ -15,13 +15,13 @@ function handleUpdate() {
 
 var changed = document.querySelector("D");
 
-document.addEventListener("keypress", (event)=>{
-  var key=event.key;
-  var randomNumber = Math.floor(Math.random() * 6)+1;
-  var randomNumbertext = "doreamon"+randomNumber+".jpg";
-  if(key=="d"){
-    image1.setAttribute("src" , randomNumbertext); 
+var number = 2;
+document.addEventListener("keypress", (event) => {
+  if (number == 7) number = 1;
+  var key = event.key;
+  var randomNumbertext = "doreamon" + number + ".jpg";
+  ++randomNumber;
+  if (key == "d") {
+    image1.setAttribute("src", randomNumbertext);
   }
 })
-
- 
