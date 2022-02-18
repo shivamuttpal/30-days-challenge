@@ -1,4 +1,3 @@
-
 let screen = document.getElementById('screen');
 buttons = document.querySelectorAll('button');
 let screenValue = '';
@@ -7,7 +6,7 @@ for (item of buttons) {
         buttonText = e.target.innerText;
         // console.log('Button text is ', buttonText);
         if (buttonText == 'X') {
-             screenValue= buttonText.substring(0, buttonText.length - 1);
+             screenValue= screenValue.substring(0, screenValue.length - 1);
              screen.value=screenValue;
         }
         else if (buttonText == 'C') {
